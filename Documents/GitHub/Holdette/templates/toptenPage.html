@@ -1,0 +1,30 @@
+<!-- templates/index.html -->  
+<html>  
+  <head>
+    <title>Top Ten {{topic}}</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" media="screen" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+
+	
+  </head>
+  <body>
+  	<h1>Top Ten {{topic}}</h1>
+  	<div class="row">
+		{% for i in range(3) %}
+			<div class="col lg-4 md-4 sm-4 xs-6">
+			  	<div class="card" style="width: 18rem;">
+			  		<a href="https://www.amazon.com/PajamaJeans-Womens-Bootcut-Stretch-Denim/dp/B079K69VQH/ref=sr_1_1?ie=UTF8&qid=1541448508&sr=8-1&keywords=women+jean+pockets">
+					  <img class="card-img-top" src="{{url_for('static', filename='media/jeans.jpg')}}" alt="Card image cap" style="width:300px;height:400px;"
+					  >
+				  </a>
+				  <div class="card-body">
+				  	<h4>{{topic}}</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  	<h5>$50</h5>
+				  </div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+  </body>
+</html>  
