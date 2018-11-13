@@ -1,18 +1,85 @@
 <!-- templates/index.html -->  
 <html>  
-  <head>
-    <title>Holdette</title>
-  </head>
-  <body>
-    <h1>Welcome to Holdette!</h1>
-    <h4>Browse</h4>
+<head>
+  <title>Holdette</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
-    <form action="http://localhost:5000/topten" method="post">
-    	<div class="form-group">Search Clothing</label>
-		    <input type="text" class="form-control" name ="topic" placeholder="e.x bomber jacket">
-		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+</head>
+<body>
+  <div class = "nav-bar">
+    <h1 style = "float: left">Holdette</h1>
 
-  </body>
+    <div class = "search">
+      <form action="http://localhost:5000/topten" method="post">
+        <div class="form-group" style = "float:left">
+          <input type="text" class="form-control" name ="topic" placeholder="find clothes with pockets" >
+        </div>
+        <button type="submit" class="btn btn-primary" style= "float:right">Search</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class = "home-page-content">
+    <div class = "large-box-media">
+      <div class = "large-box-content" id="leather-large">
+      </div>
+    </div>
+
+    <div class = "small-box-media">
+      <div class = "individual-box">
+        <div class = "individual-box-media" id="leggings-small">
+        </div>
+        <p>Top 10 leggings you need right now</p>
+      </div>
+      <div class = "individual-box">
+        <div class = "individual-box-media" id="dress-small">
+        </div>
+        <p>Top 15 dresses with pockets you need right now</p>
+      </div>
+      <div class = "individual-box">
+       <div class = "individual-box-media" id="sweater-small">
+       </div>
+       <p>The best sweaters with pockets this season</p>
+     </div>
+   </div>
+
+   
+
+
+
+   <div class = "medium-box-media">
+    <div class = "medium-image" id="anne-background">
+    </div>
+    <h1> Anne Hathaway stars in the most cinematically advanced film, The Intern</h1>
+    <p> Jujubes bear claw chupa chups tiramisu jelly topping. Topping halvah cupcake topping sesame snaps. Macaroon oat cake toffee wafer chupa chups icing… </p>
+
+    <span class = "medium-text">
+
+    </span>
+  </div>
+
+  <div class = "medium-box-media">
+    <div class = "medium-image" id="anne-background-2">
+    </div>
+    <h1> Biking around the office? Made easier with functional pockets</h1>
+    <p> Jujubes bear claw chupa chups tiramisu jelly topping. Topping halvah cupcake topping sesame snaps. Macaroon oat cake toffee wafer chupa chups icing… </p>
+
+    <span class = "medium-text">
+
+    </span>
+  </div>
+
+  <div class = "medium-box-media">
+    <div class = "medium-image" id="anne-background-3">
+    </div>
+    <h1> Stripes in 2018: The new polka dots you never knew you needed</h1>
+    <p> Jujubes bear claw chupa chups tiramisu jelly topping. Topping halvah cupcake topping sesame snaps. Macaroon oat cake toffee wafer chupa chups icing… </p>
+
+    <span class = "medium-text">
+
+    </span>
+  </div>
+
+</body>
 </html>

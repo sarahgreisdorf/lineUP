@@ -1,0 +1,129 @@
+/*NavBar*/
+.search {
+	float: right;
+}
+
+/*Desktop Large Box Styling*/
+
+.large-box-media {
+	margin-top: 120px;
+	width: 95%;
+	margin-left:2.5%;
+	height: 500px;
+	box-shadow: 1px 6px 20px #dadada;
+}
+
+#leather-large {
+	width: 95%;
+	height: 500px;
+	background: url('../media/anneh1.jpg') no-repeat center;
+	float: left;
+}
+
+.large-box-content {
+	display: block;
+}
+
+/*Desktop small Box Styling*/
+
+.individual-box {
+	width: 300px;
+	height: 200px;
+	box-shadow: 1px 6px 20px #dadada;
+	display: inline-block;
+	margin-top: 100px;
+}
+
+.individual-box p{
+	padding-top: 70%;
+	margin-bottom: 20%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.small-box-media {
+    display: flex;
+    width: 83%;
+    margin-left: 8%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#leggings-small {
+	width: 300px;
+	height: 200px;
+	background: url('../media/leggings.jpg') no-repeat center;
+	float: left;
+}
+
+#dress-small {
+	width: 300px;
+	height: 200px;
+	background: url('../media/dress.jpg') no-repeat center;
+	float: left;
+}
+
+#sweater-small {
+	width: 300px;
+	height: 200px;
+	background: url('../media/sweater.jpeg') no-repeat center;
+	float: left;
+}
+
+
+/*Desktop Medium Box Styling*/
+.medium-image img {
+	width: 50%;
+	display: block;
+}
+
+.medium-text {
+	float: right;
+}
+
+.medium-box-media {
+	margin-top: 120px !important;
+	width: 80%;
+	height: 300px;
+	box-shadow: 1px 6px 20px #dadada;
+	margin: auto;
+}
+
+.medium-box-media h1 {
+	font-family: 'Roboto', sans-serif;;
+	font-weight: 500;
+	padding-left: 53%;
+	padding-top: 4%;
+	padding-right: 4%;
+}
+
+.medium-box-media p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-left: 53%;
+	padding-right: 4%;
+}
+
+#anne-background {
+	width: 50%;
+	height: 300px;
+	background: url('../media/anneh1.jpg') no-repeat center;
+	float: left;
+}
+
+#anne-background-2 {
+	width: 50%;
+	height: 300px;
+	background: url('../media/anneh2.jpg') no-repeat center;
+	float: left;
+}
+
+#anne-background-3 {
+	width: 50%;
+	height: 100%;
+	background: url('../media/anneh3.jpg') no-repeat center;
+	float: left;
+}
+
+
